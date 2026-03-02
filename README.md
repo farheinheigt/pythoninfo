@@ -1,26 +1,30 @@
 # pythoninfo
 
-## Overview
-Python environment diagnostics and package inspection.
+Python environment diagnostics and package inspection from a small autonomous Rust CLI.
 
-## Location
-- Repository: `/Users/farheinheigt/Projets/dev/pythoninfo`
-- User entrypoint: `/Users/farheinheigt/Projets/dev/pythoninfo/bin/pythoninfo`
-- Completion file: `/Users/farheinheigt/Projets/dev/pythoninfo/bin/_pythoninfo.completion.zsh`
+## Entrypoints
+
+- User command: `bin/pythoninfo`
+- Zsh completion: `bin/_pythoninfo.completion.zsh`
+- Rust source: `src/main.rs`
 
 ## Usage
-Run the command directly: `pythoninfo`.
-Generate completion script: `pythoninfo --completion zsh`.
+
+Run the command directly: `bin/pythoninfo`.
+Generate completion script: `bin/pythoninfo --completion zsh`.
 
 ## Examples
-`pythoninfo`
-`pythoninfo requests`
+
+`bin/pythoninfo`
+`bin/pythoninfo requests`
 
 ## Requirements
+
 - Runtime wrapper: `zsh`
 - Build tool: `cargo`
 
 ## Notes
+
 - The user-facing entrypoint remains `bin/pythoninfo`.
 - The Rust source lives under `src/`.
 - Package inspection still uses the active Python interpreter for `pip show` and metadata inspection.
